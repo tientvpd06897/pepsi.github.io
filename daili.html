@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="icon" href="anh/fpt.svg.ico" type="image/x-icon" />
+        <title>Trang đại lí</title>
+        <link rel="icon" href="anh/kisspng.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/1.css" />
+    </head>
+
+    <body>
+        <header class="containe">
+            <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+                <section class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="hihi"><a href="index.html"><img src="anh/logo2.png" alt="" height="52px" width="135px"/></a></li>
+                            <li id="active"><a href="index.html">Trang chủ</a></li>
+                            <li id="active"><a href="sanpham.html">Sản phẩm</a></li>
+                            <li id="active" class="active"><a href="daili.html">Đại lý pepsi</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">
+                                    <span class="glyphicon glyphicon-log-in"></span>
+                                    Đăng nhập
+                                </a></li>
+                        </ul>
+                    </div>
+                </section>
+            </nav>
+            <nav id="myModal" class="modal fade" role="dialog">
+
+                <section class="modal-dialog">
+
+                    <section class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">Đăng nhập/ Đăng ký</h3>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#dangNhap">Đăng nhập</a></li>
+                                <li><a data-toggle="tab" href="#dangKy">Đăng ký</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="dangNhap" class="tab-pane fade in active">
+                                    <form>
+                                        <div class="form-group">
+                                            <div> <label>Tên tài khoản:</label> </div>
+                                            <input name="id" type="text"  class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <div> <label>Mật khẩu:</label></div>
+                                            <input name="PW" type="Password" class="form-control"/>
+                                        </div>
+                                        <input name="re" type="checkbox"/>Nhớ tôi không?
+                                        <hr>
+                                        <button Type="submit">Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <div id="dangKy" class="tab-pane fade">
+                                    <form>
+                                        <div class="form-group">
+                                            <div> <label>Tên tài khoản:</label> </div>
+                                            <input name="id" type="text"  class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <div> <label>Email:</label> </div>
+                                            <input name="id" type="text"  class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <div> <label>Ngày Sinh:</label> </div>
+                                            <input name="id" type="datetime"  class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <div> <label>Mật khẩu:</label></div>
+                                            <input name="PW" type="Password" class="form-control"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <div> <label>Nhâp lại mật khẩu:</label></div>
+                                            <input name="PW" type="Password" class="form-control"/>
+                                        </div>
+                                        <input name="re" type="checkbox"/>Nhớ tôi không?
+                                        <hr>
+                                        <button Type="submit">Đăng ký</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </nav>
+        </header>
+
+        <article id="tabs-container">
+            <ul class="tabs-menu">
+                <li class="current"><a href="#tab-1">Công Ty Pepsico</a></li>
+                <li><a href="#tab-2">Chi Nhánh Miền Bắt</a></li>
+                <li><a href="#tab-3">Chi Nhánh Miền Trung</a></li>
+                <li><a href="#tab-4">Chi Nhánh Miền Nam</a></li>
+            </ul>
+            <div class="tab">
+                <div id="tab-1" class="tab-content">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <p class="text-justify"><h1>Công Ty Pepsico</h1>
+                            <br><h2>Vị Trí Công Ty: 524 Điện Biên Phủ, Thanh Khê Đông, Thanh Khê, Đà Nẵng, Việt Nam</h2>
+                            <br><h4><samp>Pepsi</samp> là nhãn hiệu nước giải khát hương Cola có gas nổi tiếng toàn cầu, được kế thừa nhiều giá trị lịch sử lâu đời. Tại Việt Nam, tự hào là một nhãn hàng đại diện cho tiếng nói của giới trẻ cùng với thông điệp “CỨ TRẺ, CỨ CHẤT, CỨ PEPSI”, chúng tôi luôn tìm cách mang đến lại những trải nghiệm sảng khoái tột đỉnh, khuyến khích người trẻ nắm bắt và tận hưởng từng khoảnh khắc thú vị của cuộc sống.</h4></p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="anh/pepsico.jpeg" alt="" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <p class="text-justify"><h1>Miền Bắc</h1>
+                            <br><h2>Vị Trí: 88 Đường Đồng Khởi, Quận 1, Thành phố Hồ Chí Minh, Việt Nam</h2>
+                            <br><h4><samp>Pepsi</samp> là nhãn hiệu nước giải khát hương Cola có gas nổi tiếng toàn cầu, được kế thừa nhiều giá trị lịch sử lâu đời. Tại Việt Nam, tự hào là một nhãn hàng đại diện cho tiếng nói của giới trẻ cùng với thông điệp “CỨ TRẺ, CỨ CHẤT, CỨ PEPSI”, chúng tôi luôn tìm cách mang đến lại những trải nghiệm sảng khoái tột đỉnh, khuyến khích người trẻ nắm bắt và tận hưởng từng khoảnh khắc thú vị của cuộc sống.</h4></p>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.464924663722!2d106.70161921458904!3d10.775659092322044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f46f8720905%3A0x6a64b97e01e4fb82!2zODggxJDhu5NuZyBLaOG7n2ksIELhur9uIE5naMOpLCBRdeG6rW4gMSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1655023195939!5m2!1svi!2s" width="730" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <p class="text-justify"><h1>Miền Trung</h1>
+                            <br><h2>Vị trí: 74 Bạch Đằng, Hải Châu 1, Hải Châu, Đà Nẵng 550000, Việt Nam</h2>
+                            <br><h4><samp>Pepsi</samp> là nhãn hiệu nước giải khát hương Cola có gas nổi tiếng toàn cầu, được kế thừa nhiều giá trị lịch sử lâu đời. Tại Việt Nam, tự hào là một nhãn hàng đại diện cho tiếng nói của giới trẻ cùng với thông điệp “CỨ TRẺ, CỨ CHẤT, CỨ PEPSI”, chúng tôi luôn tìm cách mang đến lại những trải nghiệm sảng khoái tột đỉnh, khuyến khích người trẻ nắm bắt và tận hưởng từng khoảnh khắc thú vị của cuộc sống.</h4></p>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15335.110896672386!2d108.20859132498585!3d16.07702019976854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421838342e31ad%3A0xf5fa1c5b6b52831f!2zQ2hpIE5ow6FuaCBDw7RuZyBUeSBUbmhoIE7GsOG7m2MgR2nhuqNpIEtow6F0IFN1bnRvcnkgUGVwc2ljbyBWaeG7h3QgTmFtIFThuqFpIE1p4buBbiBUcnVuZw!5e0!3m2!1svi!2s!4v1655024474935!5m2!1svi!2s" width="730" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-4" class="tab-content">
+                    <div class="row">
+                        <div class="col-md-6 text-center">
+                            <p class="text-justify"><h1>Miền Nam</h1>
+                            <br><h2>Vị trí: Số 117C Đ. Trường Chinh, Phương Liệt, Thanh Xuân, Hà Nội, Việt Nam</h2>
+                            <br><h4><samp>Pepsi</samp> là nhãn hiệu nước giải khát hương Cola có gas nổi tiếng toàn cầu, được kế thừa nhiều giá trị lịch sử lâu đời. Tại Việt Nam, tự hào là một nhãn hàng đại diện cho tiếng nói của giới trẻ cùng với thông điệp “CỨ TRẺ, CỨ CHẤT, CỨ PEPSI”, chúng tôi luôn tìm cách mang đến lại những trải nghiệm sảng khoái tột đỉnh, khuyến khích người trẻ nắm bắt và tận hưởng từng khoảnh khắc thú vị của cuộc sống.</h4></p>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.8534963228867!2d105.83561631473087!3d20.998508986014794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7b2002527f%3A0xbe54f9fda6f32006!2zU3VudG9yeSBQZXBzaWNvIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1655025125681!5m2!1svi!2s" width="730" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <footer class="container-fluid footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="index.html"><img src="anh/logo 1.png" alt="" id="logo-footer"></a>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Liên hệ</h3>
+                        <p>
+                            Số phone:1-800-433-2652 <br><!-- comment -->
+                            Email:Pepsi@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Theo dõi</h3>
+                        <p>
+                            <a href="#"> <img src="anh/facebook.png" alt="" height="30" width="30"> </a>
+                            <a href="#"><img src="anh/google-plus.png" alt="" height="30" width="30"> </a>
+                            <a href="#"><img src="anh/ig.png" alt="" height="30" width="30"> </a>
+                            <a href="#"><img src="anh/pinterest.png" alt="" height="30" width="30"> </a>
+                            <a href="#"><img src="anh/twitter.png" alt="" height="30" width="30"> </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="container-fluid footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">2021 © Công ty Pepsi. Đã đăng ký Bản quyền.</div>
+                    <div class="col-md-3">
+                        <a href="#" class="social">Quảng cáo</a>
+                        <a href="#" class="social">Liên hệ</a>
+                        <a href="#" class="social">Quảng cáo</a>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function () {
+                $(".tabs-menu a").click(function (event) {
+                    event.preventDefault();
+                    $(this).parent().addClass("current");
+                    $(this).parent().siblings().removeClass("current");
+                    var tab = $(this).attr("href");
+                    $(".tab-content").not(tab).css("display", "none");
+                    $(tab).fadeIn();
+                });
+            });
+        </script>
+    </body>
+
+</html>
